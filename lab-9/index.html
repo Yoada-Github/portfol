@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+    <style>
+        body {
+            padding-top:px;
+        }
+        .sidebar {
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding-top: 56px;
+            background-color: #343a40;
+            color: white;
+        }
+        .sidebar img {
+            max-width: 150px;
+            margin-bottom: 1rem;
+        }
+        .sidebar nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar nav ul li {
+            padding: 0.5rem 0;
+        }
+        .sidebar nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .main-content {
+            margin-left: 25%;
+        }
+        .section {
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        #Home {
+            background-image: url(img/imgg.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        #about {
+            background-color: rgb(56, 56, 119);
+            color: white;
+        }
+        #Projects {
+            background-image: url(img/walleper.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        #Contact {
+            background-image: url(img/addis.avif);
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        .project-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 1rem;
+            margin-bottom: 1rem;
+            height: 100%;
+        }
+        .project-item img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                position: static;
+                height: auto;
+                padding-top: 1rem;
+            }
+            .main-content {
+                margin-left: 0;
+            }
+            .section {
+                min-height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 sidebar">
+                <div class="text-center">
+                    <img src="img/Y.jpg" alt="img" class="img-fluid rounded-circle" />
+                    <h3 class="sitename pb-2">Yoseph Adane</h3>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#Home"><i class="bi bi-house"></i> Home</a></li>
+                        <li><a href="#about"><i class="bi bi-person"></i> About</a></li>
+                        <li><a href="#Projects"><i class="bi bi-images"></i> Projects</a></li>
+                        <li><a href="#Contact"><i class="bi bi-envelope"></i> Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-9 main-content">
+                <section id="Home" class="section d-flex align-items-center">
+                    <div class="container">
+                        <h2>Yoseph Adane</h2>
+                        <p>I'm a beginner Full Stack Web Developer</p>
+                        <a href="#about" class="btn btn-primary mt-3">Get Started</a>
+                    </div>
+                </section>
+
+                <section id="about" class="section">
+                    <div class="container">
+                        <h2>About</h2>
+                        <p>Hello! I'm Yoseph Adane, a Full Stack Web Developer with a passion for creating innovative solutions and <br> a strong commitment to continuous learning. My background includes a blend of software development, <br>problem-solving, and teamwork, which allows me to effectively tackle challenging projects. I have experience in <br> HTML, CSS, JavaScript, and various frameworks, and I'm always eager to expand my skill set. My interest lies in building <br>impactful software applications that not only meet user needs but also push the boundaries of what's possible.<br> When I'm not coding, you can find me exploring new technologies, reading up on the latest industry trends, <br> or collaborating with others on exciting new projects.</p>
+                        <div class="row mt-4">
+                            <div class="col-lg-4">
+                                <img src="img/pic2.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-lg-8">
+                                <h3>Full Stack Web Developer</h3>
+                                <p>I'm a passionate and dedicated full stack web developer currently enhancing my skills in the latest technologies.</p>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <ul>
+                                            <li><strong>Name:</strong> Yoseph Adane</li>
+                                            <li><strong>Birthday:</strong> 4 Jan 2000</li>
+                                            <li><strong>Phone:</strong> +251 893375597</li>
+                                            <li><strong>City:</strong> Addis Ababa, Ethiopia</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <ul>
+                                            <li><strong>Age:</strong> 24</li>
+                                            <li><strong>Email:</strong> yosephadane63@gmail.com</li>
+                                            <li><strong>Freelance:</strong> Available</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p>I enjoy working on projects that challenge me to think creatively and solve complex problems. With a proactive approach to my work and a commitment to continuous learning, I strive to make a meaningful impact in the tech world.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="Projects" class="section">
+                    <div class="container">
+                        <h2>Projects</h2>
+                        <p>Here are some of my recent projects:</p>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3 mb-4">
+                                <div class="project-item">
+                                    <img src="img/Screenshot (264).png" class="img-fluid mb-3" alt="Video Background Project">
+                                    <h4>Video Background</h4>
+                                    <p>This project uses a video background for the website. It is done using CSS.</p>
+                                    <a href="https://yoada-github.github.io/web/main.html" target="_blank" class="btn btn-primary btn-sm">Live Project</a>
+                                    <a href="https://yoada-github.github.io/web/main.html" target="_blank" class="btn btn-secondary btn-sm">GitHub</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 mb-4">
+                                <div class="project-item">
+                                    <img src="img/Screenshot (265).png" class="img-fluid mb-3" alt="Responsive Page Project">
+                                    <h4>Responsive Page</h4>
+                                    <p>This project is done using CSS. It contains different website pages.</p>
+                                    <a href="https://yoada-github.github.io/flexbox/Home.html" target="_blank" class="btn btn-primary btn-sm">Live Project</a>
+                                    <a href="https://yoada-github.github.io/flexbox/Home.html" target="_blank" class="btn btn-secondary btn-sm">GitHub</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 mb-4">
+                                <div class="project-item">
+                                    <img src="img/Screenshot (266).png" class="img-fluid mb-3" alt="Cover Page Project">
+                                    <h4>Cover Page</h4>
+                                    <p>Bootstrap, a new and short website development method, is applied to do this project.</p>
+                                    <a href="https://yoada-github.github.io/Bootstrap1/lab-1/lab1.html" target="_blank" class="btn btn-primary btn-sm">Live Project</a>
+                                    <a href="https://yoada-github.github.io/Bootstrap1/lab-1/lab1.html" target="_blank" class="btn btn-secondary btn-sm">GitHub</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 mb-4">
+                                <div class="project-item">
+                                    <img src="img/screenshot.png" class="img-fluid mb-3" alt="Pricing Value Project">
+                                    <h4>Pricing Value</h4>
+                                    <p>It's built with default bootstrap components and utilities with little customization.</p>
+                                    <a href="https://yoada-github.github.io/bootpage/lab-6/" target="_blank" class="btn btn-primary btn-sm">Live Project</a>
+                                    <a href="https://yoada-github.github.io/bootpage/lab-6/" target="_blank" class="btn btn-secondary btn-sm">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="Contact" class="section">
+                    <div class="container">
+                        <h2>Contact</h2>
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="info-item">
+                                    <h3><i class="bi bi-geo-alt"></i> Address</h3>
+                                    <p>Addis Ababa, Ethiopia</p>
+                                </div>
+                                <div class="info-item">
+                                    <h3><i class="bi bi-telephone"></i> Phone Number</h3>
+                                    <p>+251 963375597</p>
+                                </div>
+                                <div class="info-item">
+                                    <h3><i class="bi bi-envelope"></i> Email</h3>
+                                    <p>yosephadane63@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <form action="forms/contact.php" class="php-email-form">
+                                    <div class="form-group">
+                                        <label for="name">Your Name</label>
+                                        <input type="text" name="name" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <label for="email">Your Email</label>
+                                        <input type="email" class="form-control" name="email" id="email" required>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <label for="subject">Subject</label>
+                                        <input type="text" class="form-control" name="subject" id="subject" required>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <label for="message">Message</label>
+                                        <textarea class="form-control" name="message" rows="5" required></textarea>
+                                    </div>
+                                    <div class="text-center mt-3">
+                                        <button type="submit" class="btn btn-primary">Send Message</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
